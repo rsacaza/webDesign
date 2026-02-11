@@ -3,21 +3,81 @@ body{
     max-width: 60rem;
     margin: auto;
     background-color: #f7f7f7;
+    font-size: .9rem;
 
 }
+
 main{
     background-color: #fdfdfd;
     border: 1px #3282e6 solid;
     border-top: 0px;
 }
-
 .content{
     padding: .5rem 2rem;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.table{
+    padding: 10px;
+    margin-right: 20px;
+    
+}
+
+.table ul{
+    display: block;
+    flex-basis: 100%;
+    width: 100%;
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.table li,
+.table li a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 1px;
+}
+.dots{
+  flex-grow: 1; 
+  border-bottom: 2px dotted #000; 
+  margin: 0 10px; 
+  position: relative;
+  
+  height: 1px;
+}
+#index{
+    background-image: url('../images/food_banner_2400x500.jpg');
+
+}
+#chap7{
+    background-image: url('../images/pests_banner_2400x500.jpg');
+}
+#chap8{
+    background-image: url("../images/noxious_weeds_banner_2400x500.jpg");
+}
+
+#chap9{
+    background-image: url("../images/nuisance_birds_banner_2400x500.jpg");
+
 }
 
 .banner{
     border-bottom: 1px #3282e6 solid;
     padding: 1px;
+    background-size: cover;
+    background-position: center;
+    display: flex;          
+    justify-content: center;  
+    align-items: end;      
+    height: 300px;                      
+    text-align: center;
 }
 
 footer{
@@ -30,9 +90,18 @@ footer{
 h1{
     font-size: 1.5rem;
     text-align: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 200px;
+    width: 50vw;
 }
 h2{
     font-size: 1.25rem;
+    text-align: center;
+    width: 98%;
+    background-color: #000;
+    color: white;
+    padding: 10px;
 }
 h3{
     font-size: 1.1rem;
@@ -68,11 +137,13 @@ body > img {
 }
 li{
     margin: .2rem;
+    text-align: left;
 }
 img{
     text-align: center;
     margin: auto;
     display: block;
+
 }
 p{
     text-indent: 2rem;
