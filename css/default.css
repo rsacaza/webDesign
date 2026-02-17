@@ -2,15 +2,19 @@ body{
     font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
     max-width: 60rem;
     margin: auto;
-    background-color: #f7f7f7;
+    background-color: peru;
     font-size: .9rem;
 
 }
 
 main{
     background-color: #fdfdfd;
-    border: 1px #3282e6 solid;
+    border: 1px black solid;
     border-top: 0px;
+    border-bottom: 0px;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0, 0.7);
+
+
 }
 .content{
     padding: .5rem 2rem;
@@ -53,23 +57,22 @@ main{
   height: 1px;
 }
 #index{
-    background-image: url('../images/food_banner_2400x500.jpg');
+    background-image: url('../images/food_banner_1200x250.jpg');
 
 }
 #chap7{
-    background-image: url('../images/pests_banner_2400x500.jpg');
+    background-image: url('../images/pests_banner_1200x250.jpg');
 }
 #chap8{
-    background-image: url("../images/noxious_weeds_banner_2400x500.jpg");
+    background-image: url("../images/noxious_weeds_banner_1200x250.jpg");
 }
 
 #chap9{
-    background-image: url("../images/nuisance_birds_banner_2400x500.jpg");
+    background-image: url("../images/nuisance_birds_banner_1200x250.jpg");
 
 }
 
 .banner{
-    border-bottom: 1px #3282e6 solid;
     padding: 1px;
     background-size: cover;
     background-position: center;
@@ -82,11 +85,19 @@ main{
 
 footer{
     padding: .5rem 1rem;
-    background-color: #e0e0e0;
+    background-color: white;
     text-align: center;
-    border: 1px #3282e6 solid;
-    border-top: 0;
+    border-top: 0px solid;
+    box-shadow: 10px 7.5px 5px rgb(0, 0, 0, 0.7);
 }
+.wrapper{
+    margin: 10px;
+    align-items: center;
+}
+.shrimp{
+    border-radius: 50%;
+}
+
 h1{
     font-size: 1.5rem;
     text-align: center;
@@ -105,13 +116,25 @@ h2{
 }
 h3{
     font-size: 1.1rem;
+    width: 75%;
+    box-shadow: 10px 7.5px 5px rgb(0, 0, 0, 0.2);
+    border: 1px black solid;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    border-radius: 10px;
+
+}
+
+button{
+    margin: 2px;
 }
 
 body > img {
     width: 100%;
     margin: 0;
-    border-left: 1px #3282e6 solid;
-    border-right: 1px #3282e6 solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
     padding: 1px;
 }
 
@@ -122,8 +145,32 @@ body > img {
     margin: .25rem .25rem 0 .5rem;
     text-align: left;
     font-size: .9rem;
+    height: 100%;
+    width: 100%;
+    border: 1px black solid;
+    padding: 5px;
+    background-color: rgb(176, 174, 174);
+    border-radius: 2%;
 }
 
+.wrapper > p{
+    height: 100%;
+    width: 100%;
+    border: 1px black solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5%;
+    text-align: left;
+}
+
+.wrapper > img{
+    float: right
+}
+#fill{
+    flex-grow: 1;
+    border: 1px white solid ;
+    margin-left: 5px;
+}
 .copyright{
     font-size: .8rem;
     text-align: center;
@@ -150,6 +197,16 @@ p{
 }
 a {
     font-weight: bold;
-    color: #3282e6;
+    color: rgb(21, 21, 21);
     text-decoration: none;
+}
+.flex{
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.mingo{
+    float: right;
+    margin-left: 5px;
 }
